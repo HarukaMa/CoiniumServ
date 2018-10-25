@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AustinHarris.JsonRpc, Version=1.1.70.0, Culture=neutral, processorArchitecture=MSIL">
@@ -131,6 +133,7 @@
     <Compile Include="Algorithms\Implementations\Fugue.cs" />
     <Compile Include="Algorithms\Implementations\Groestl.cs" />
     <Compile Include="Algorithms\Implementations\Keccak.cs" />
+    <Compile Include="Algorithms\Implementations\Lyra2REv2.cs" />
     <Compile Include="Algorithms\Implementations\Nist5.cs" />
     <Compile Include="Algorithms\Implementations\Qubit.cs" />
     <Compile Include="Algorithms\Implementations\Scrypt.cs" />

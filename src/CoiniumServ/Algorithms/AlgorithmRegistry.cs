@@ -42,6 +42,7 @@ namespace CoiniumServ.Algorithms
         public const string Fugue = "fugue";
         public const string Groestl = "groestl";
         public const string Keccak = "keccak";
+        public const string Lyra2REv2 = "lyra2rev2";
         public const string Nist5 = "nist5";
         public const string Qubit = "qubit";
         public const string Scrypt = "scrypt";
@@ -100,6 +101,7 @@ namespace CoiniumServ.Algorithms
             _applicationContext.Container.Register<IHashAlgorithm, Fresh>(Fresh).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Fugue>(Fugue).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Groestl>(Groestl).AsMultiInstance();
+            _applicationContext.Container.Register<IHashAlgorithm, Lyra2REv2>(Lyra2REv2).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Keccak>(Keccak).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Nist5>(Nist5).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Qubit>(Qubit).AsMultiInstance();
